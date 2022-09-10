@@ -143,11 +143,26 @@ header {
 .window-bottom{
     @extend .window-top;
     height: 190px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.stick{
+    img{
+        height: 110px
+    };
+}
+.bottom-rows{
+    width: 96%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .window-bottom-row{
     width: 98%;
     height: 20px;
     background-color:rgb(22, 21, 34);
+    
 }
 .bottom-green{
     background-color:rgb(14, 205, 113);
@@ -171,8 +186,12 @@ header {
 .window-bottom-first{
    @extend .window-top-first;
    height: 25px;
+   width: 98%;
    p:nth-child(3){
     transform: translate(-10px);
+   }
+   p:nth-child(4){
+    transform: translate(-18px);
    }
 }
 .window-bottom-row{
@@ -231,6 +250,8 @@ height: 200px;
   .country{
     width: 60px;
   }
-
+.top-right{
+    width: 42%
+}
   }
 }

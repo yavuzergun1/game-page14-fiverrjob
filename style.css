@@ -150,6 +150,20 @@ header .back {
 
 .window-bottom {
   height: 190px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.stick img {
+  height: 110px;
+}
+
+.bottom-rows {
+  width: 96%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .window-bottom-row {
@@ -181,9 +195,13 @@ header .back {
 
 .window-bottom-first {
   height: 25px;
+  width: 98%;
 }
 .window-bottom-first p:nth-child(3) {
   transform: translate(-10px);
+}
+.window-bottom-first p:nth-child(4) {
+  transform: translate(-18px);
 }
 
 .window-bottom-row {
@@ -240,5 +258,8 @@ header .back {
   }
   .country {
     width: 60px;
+  }
+  .top-right {
+    width: 42%;
   }
 }/*# sourceMappingURL=style.css.map */
